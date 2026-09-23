@@ -173,7 +173,6 @@ jobs:
           [[ "${?}" -ne "0" ]] && echo "Error: Download failed." && exit 1
 
           ln -sf /builder/fnnas ${{ github.workspace }}/fnnas
-          ln -sf /builder/fnnas "/home/runner/work/_actions/${{ github.repository }}/${{ github.ref_name }}/fnnas"
 
           echo "status=success" >> ${GITHUB_OUTPUT}
 
