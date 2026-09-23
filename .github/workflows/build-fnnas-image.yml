@@ -471,7 +471,7 @@ jobs:
 
       - name: Package FnNAS for target boards
         if: ${{ steps.down.outputs.status == 'success' && !cancelled() }}
-        uses: w2035/fnnas@my
+        uses: ${{ github.repository }}@${{ github.ref_name }}
         with:
           fnnas_path: fnnas/*.img.xz
           fnnas_board: ${{ inputs.fnnas_board }}
