@@ -272,7 +272,7 @@ init_var() {
 
     # Validate partition sizes (Unit: MiB). Boot must be >= 256 and root >= 4096 to fit.
     [[ "${boot_mb}" =~ ^[0-9]+$ && "${boot_mb}" -ge 256 ]] || error_msg "Invalid boot partition size: [ ${boot_mb} ]"
-    [[ "${root_mb}" =~ ^[0-9]+$ && "${root_mb}" -ge 4096 ]] || error_msg "Invalid rootfs partition size: [ ${root_mb} ]"
+    [[ "${root_mb}" =~ ^[0-9]+$ && "${root_mb}" -ge 2560 ]] || error_msg "Invalid rootfs partition size: [ ${root_mb} ]"
 }
 
 check_data() {

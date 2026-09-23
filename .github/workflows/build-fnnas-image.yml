@@ -284,7 +284,7 @@ on:
       fnnas_size:
         description: "Set boot/rootfs size(MiB)"
         required: false
-        default: "512/4096"
+        default: "420/3072"
       rootfs_expand:
         description: "Set rootfs expansion size(GiB)"
         required: false
@@ -464,14 +464,14 @@ jobs:
 
           # Create directory symlinks for packaging
           ln -sf /builder/fnnas ${{ github.workspace }}/fnnas
-          ln -sf /builder/fnnas /home/runner/work/_actions/ophub/fnnas/main/fnnas
+          ln -sf /builder/fnnas /home/runner/work/_actions/w2035/fnnas/my/fnnas
 
           echo "build_tag=${build_tag}" >> ${GITHUB_ENV}
           echo "status=success" >> ${GITHUB_OUTPUT}
 
       - name: Package FnNAS for target boards
         if: ${{ steps.down.outputs.status == 'success' && !cancelled() }}
-        uses: ophub/fnnas@main
+        uses: w2035/fnnas@my
         with:
           fnnas_path: fnnas/*.img.xz
           fnnas_board: ${{ inputs.fnnas_board }}
