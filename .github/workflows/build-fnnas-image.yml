@@ -98,6 +98,7 @@ on:
           - lubancat-2
           - lubancat-3
           - lubancat-4
+          - lubancat-5
           - lx-r3s
           - lyt-t68m
           - lz-d3568
@@ -123,6 +124,7 @@ on:
           - painet-p5
           - panther-x2
           - photonicat
+          - quarkpi-ca2
           - r66s
           - r68s
           - recomputer-rk3576-devkit
@@ -260,6 +262,7 @@ on:
           - yskj
           - zcube1-max
           - zk-r39a
+          - ztl-a568
           - zysj
       kernel_repo:
         description: "Set fnnas kernel repository"
