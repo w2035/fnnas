@@ -11,9 +11,9 @@ This project benefits from the sustained contributions of numerous [contributors
 
 ## FnNAS Firmware Default Information
 
-| System Name    | Default Account | Default Password | SSH Port | IP Address |
-| -------------- | ------- | ------- | ------- | ------- |
-| 🛜 [FnNAS.OS](https://github.com/ophub/fnnas/releases) | Custom | Custom | 22 | Get IP from Router |
+| System Name    | Default Account | Default Password | SSH Port | IP Address | Access Port |
+| -------------- | ------- | ------- | ------- | ------- | ------- |
+| 🛜 [FnNAS.OS](https://github.com/ophub/fnnas/releases) | Custom | Custom | 22 | Get IP from Router | 5666 |
 
 
 ## Supported Device List
